@@ -27,3 +27,6 @@ I also have a data.js file where I have some dummy data in json. The data.js hav
 products and one for people. We will use these while working with route params and query strings etc.
 
 Route parameters added to /api/products/user-will-enter-id-of-product
+
+Query Strings added... Now user can filter out the projects based on thier names starting character
+as well as limit the number of projects they need to display.
