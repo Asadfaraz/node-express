@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.send("<h3> Home Page </h3> <a href='/api/products'>Products</a>");
 });
 // products page
-app.get("/api/products", (req, res) => {
+app.get("/api/products/", (req, res) => {
   // res.send(products);
   const newProducts = products.map((product) => {
     const { id, name, image } = product;
@@ -20,6 +20,23 @@ app.get("/api/products", (req, res) => {
     return { id, name, image };
   });
   res.send(newProducts);
+});
+// Route Params
+app.get("/api/products/:productID", (req, res) => {
+  // Route parameters in my case productID is like a placeholder where user will provide a value
+  const { productID } = req.params;
+  const singleProduct = products.find((product) => {
+    return product.id == Number(productID);
+  });
+
+  // if singleProduct is undefine
+  if (!singleProduct) {
+    return res
+      .status(404)
+      .send("<h2>Product not found</h2> <p><a href='/'>Home</a></p>");
+  }
+
+  return res.send(singleProduct);
 });
 
 // About page

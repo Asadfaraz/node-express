@@ -18,3 +18,5 @@ I am learning Nodejs and here I learned how to make get request using Expressjs.
 
 I also have a data.js file where I have some dummy data in json. The data.js have 2 arrays one for
 products and one for people. We will use these while working with route params and query strings etc.
+
+Route parameters added to /api/products/user-will-enter-id-of-product
