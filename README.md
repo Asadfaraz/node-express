@@ -5,13 +5,20 @@ performing other server stuff.
 
 I am learning Nodejs and here I learned how to make get request using Expressjs.
 
-\***\*\*\*\*** Methods to use with Express.js **\*\*\***
+### Methods to use with Express.js
+
 1- GET
+
 2- POST
+
 3- PUT
+
 4- DELETE
+
 5- ALL
+
 6- USE
+
 7- LISTEN
 
 ---
