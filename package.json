@@ -4,7 +4,7 @@
   "description": "",
   "main": "learning-express.js",
   "scripts": {
-    "start": "nodemon learning-express.js"
+    "start": "nodemon middles.js"
   },
   "author": "",
   "license": "ISC",

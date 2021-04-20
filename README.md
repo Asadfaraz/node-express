@@ -31,3 +31,5 @@ Route parameters added to /api/products/user-will-enter-id-of-product
 
 Query Strings added... Now user can filter out the projects based on thier names starting character
 as well as limit the number of projects they need to display.
+
+For middlewares I have a separate file named middles.js which has middleware examples.
