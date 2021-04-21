@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
 const logger = require("./logger");
+const authorize = require("./authorize");
 
 // Middleware using app.use
-app.use(logger);
+app.use([logger, authorize]);
 
 // ----------------------------------------
 // HOme route
@@ -22,6 +23,7 @@ app.get("/api/products", (req, res) => {
 });
 
 app.get("/api/items", (req, res) => {
+  console.log(req.user);
   res.send("items");
 });
 
